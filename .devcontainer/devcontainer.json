@@ -1,0 +1,21 @@
+{
+  "image": "ncs:foo",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/app,type=bind",
+  "workspaceFolder": "/workspace",
+  "onCreateCommand": "chmod +x app/.devcontainer/init.sh && app/.devcontainer/init.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "nRF Connect"
+      },
+      "extensions": [
+        "nordic-semiconductor.nrf-connect-extension-pack"
+      ]
+    },
+    "codespaces": {
+      "openFiles": [
+        "app/README.md"
+      ]
+    }
+  }
+}
