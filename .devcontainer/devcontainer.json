@@ -1,5 +1,5 @@
 {
-  "image": "ghcr.io/embeddedcontainers/ncs:v2.5.0SDK",
+  "image": "ghcr.io/embeddedcontainers/ncs:v2.8.0SDK",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/app,type=bind",
   "workspaceFolder": "/workspace",
   "onCreateCommand": "chmod +x app/.devcontainer/init.sh && app/.devcontainer/init.sh",
